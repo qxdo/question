@@ -126,7 +126,7 @@ body .layui-layim-chat .layui-layer-content{background: none;}
 .layim-chat-title{position: absolute; top: -80px; height: 80px;}
 .layim-chat-other{position: relative; top: 15px; left: 15px; padding-left: 60px; cursor: default;}
 .layim-chat-other img{position: absolute; left: 0; top: 0; width: 50px; height: 50px; border-radius: 100%;}
-.layim-chat-username{position: relative; top: 5px; font-size: 18px;}
+.layim-chat-username{position: relative; top: 5px; font-size: 28px;}
 .layim-chat-status{margin-top: 6px; font-size: 14px; color: #999;}
 .layim-chat-group .layim-chat-other .layim-chat-username{cursor: pointer;}
 .layim-chat-group .layim-chat-other .layim-chat-username em{padding: 0 10px; color: #999;}
@@ -134,10 +134,10 @@ body .layui-layim-chat .layui-layer-content{background: none;}
 .layim-chat-main{height: 262px; padding: 15px 15px 5px 15px; overflow-x: hidden; overflow-y: auto;}
 .layim-chat-main ul li{position: relative; font-size: 0; margin-bottom: 10px; padding-left: 60px; min-height: 68px;}
 .layim-chat-user,
-.layim-chat-text{display: inline-block; *display:inline; *zoom:1; vertical-align:top; font-size: 14px;}
+.layim-chat-text{display: inline-block; *display:inline; *zoom:1; vertical-align:top; font-size: 25px;}
 .layim-chat-user{position: absolute; left: 3px;}
 .layim-chat-user img{width: 40px; height: 40px; border-radius: 100%;}
-.layim-chat-user cite{position: absolute; left: 60px; top: -2px; width: 500px; line-height: 24px; font-size: 12px; white-space: nowrap; color: #999; text-align: left; font-style: normal;}
+.layim-chat-user cite{position: absolute; left: 60px; top: -2px; width: 500px; line-height: 24px; font-size: 20px; white-space: nowrap; color: #999; text-align: left; font-style: normal;}
 .layim-chat-user cite i{padding-left: 15px; font-style: normal;}
 .layim-chat-text{position: relative; line-height: 22px; margin-top: 25px; padding: 8px 15px; background-color: #e2e2e2; border-radius: 3px; color: #333; word-break: break-all;}
 .layim-chat-text:after{content: ''; position: absolute; left: -10px; top: 13px; width: 0; height: 0; border-style: dashed; border-color:transparent; overflow:hidden; border-width: 10px; border-top-style: solid; border-top-color: #e2e2e2;}
@@ -165,10 +165,10 @@ body .layui-layim-chat .layui-layer-content{background: none;}
 .layim-chat-mine .layim-chat-text:after{left: auto; right: -10px; border-top-color: #5FB878;}
 .layim-chat-mine .layim-chat-text a{color: #fff;}
 
-.layim-chat-footer{border-top: 1px solid #F1F1F1;}
+.layim-chat-footer{border-top: 1px solid #aaa6a6;}
 .layim-chat-tool{position: relative; padding: 0 8px; height: 38px; line-height: 38px; font-size: 0;}
-.layim-chat-tool span{position: relative; margin: 0 10px; display: inline-block; *display:inline; *zoom:1; vertical-align:top; font-size: 24px; cursor: pointer;}
-.layim-chat-tool .layim-tool-log{position: absolute; right: 5px; font-size: 14px; }
+.layim-chat-tool span{position: relative; margin: 0 10px; display: inline-block; *display:inline; *zoom:1; vertical-align:top; font-size: 25px; cursor: pointer;}
+.layim-chat-tool .layim-tool-log{position: absolute; right: 5px; font-size: 25px; }
 .layim-tool-log i{position: relative; top: 2px; margin-right: 5px; font-size: 20px; color: #999}
 .layim-tool-image input{position: absolute; font-size: 0; left: 0; top: 0; width: 100%; height: 100%; opacity: 0.01; filter: Alpha(opacity=1); cursor: pointer;}
 
@@ -182,7 +182,7 @@ body .layui-layim-face  .layui-layer-content{padding:0; background-color:#fff; c
 
 /* 输入框 */
 .layim-chat-textarea{margin-left: 10px;}
-.layim-chat-textarea textarea{display: block; width: 100%; padding: 5px 0 0 0; height: 68px; line-height: 20px; border: none; overflow: auto; resize: none; background: none;}
+.layim-chat-textarea textarea{display: block; width: 100%; padding: 5px 0 0 0; height: 68px; line-height: 20px; border: none; overflow: auto; resize: none; background: none; font-size: 20px;}
 .layim-chat-textarea textarea:focus{outline: 0;}
 
 .layim-chat-bottom{position: relative; height: 46px;}

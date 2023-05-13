@@ -74,7 +74,7 @@
             , isgroup: false //是否开启群组
             , min: true //是否始终最小化主面板，默认false
             , notice: false //是否开启桌面消息提醒，默认false
-            //,voice: false //声音提醒，默认开启，声音文件为：default.mp3
+            ,voice: false //声音提醒，默认开启，声音文件为：default.mp3
 
             // ,msgbox: layui.cache.layimAssetsPath + 'html/msgbox.html' //消息盒子页面地址，若不开启，剔除该项即可
             // ,find: layui.cache.layimAssetsPath + 'html/find.html' //发现页面地址，若不开启，剔除该项即可
@@ -107,14 +107,11 @@
         //触发layim建立就绪
         layim.on('ready', function (res) {
             var chatDialog = layim.chat({
-                name: "我的医药助手",
+                name: "心脏病问答系统",
                 avatar: layui.cache.layimAssetsPath + "images/default.png",
                 id: -1,
                 type: "friend",
-                full: false,
             });
-
-
         });
 
         //触发发送消息

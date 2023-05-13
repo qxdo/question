@@ -9,10 +9,14 @@ def index():
 @app.route('/api/chat', methods=['POST'])
 def api_message():
     data = request.get_json()
-    print(data['message'])
-    # 在这里处理消息，例如发送电子邮件或保存到数据库
-    return jsonify({'code': 0, 'message': 'success', 'data': '测试12345676'})
+    response_message = 'api接口出错啦，请排查一下吧'
+    # write logic in there
+
+
+    print('req:', data['message'],'resp:', response_message)
+
+    return jsonify({'code': 0, 'message': 'success', 'data': response_message})
+
 
 if __name__ == '__main__':
-    app.run(debug=True)
-
+    app.run(debug=True, port=4999)

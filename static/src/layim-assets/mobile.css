@@ -278,7 +278,7 @@ body .layui-m-layer .layui-m-layer-msg{width: auto; max-width: 90%; margin: 0 au
 .layim-chat-system{margin: 10px 0; text-align: center;}
 .layim-chat-system span{display: inline-block; line-height: 30px; padding: 0 15px; border-radius: 3px; background-color: #ddd; color: #fff; font-size: 14px; cursor: pointer;}
 
-.layim-chat-footer{ position: fixed; bottom: 0; left: 10px; right: 10px; height: 80px;}
+.layim-chat-footer{ position: fixed; bottom: 0; left: 5px; right: 10px; height: 80px;}
 .layim-chat-send{display: -webkit-box; display: -webkit-flex; display: flex;}
 .layim-chat-send input{-webkit-box-flex: 1; -webkit-flex: 1; flex: 1; height: 40px; padding-left: 5px; border: none 0; background-color: #fff; border-radius: 3px;}
 .layim-chat-send button{border-radius: 3px; height: 40px; padding: 0 20px; border: none 0; margin-left: 10px; background-color: #5FB878; color: #fff;}
