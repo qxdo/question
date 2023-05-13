@@ -259,7 +259,8 @@ layui.define(['laytpl', 'upload', 'layer-mobile', 'zepto'], function(exports){
       ,'<ul></ul>'
     ,'</div>'
     ,'<div class="layim-chat-footer">'
-      ,'<div class="layim-chat-send"><input type="text" autocomplete="off"><button class="layim-send layui-disabled" layim-event="send">发送</button></div>'
+      ,'<div class="layim-chat-se' +
+    'nd"><input type="text" autocomplete="off"><button class="layim-send layui-disabled" layim-event="send">发送</button></div>'
       ,'<div class="layim-chat-tool" data-json="{{encodeURIComponent(JSON.stringify(d.data))}}">'
         ,'<span class="layui-icon layim-tool-face" title="选择表情" layim-event="face">&#xe60c;</span>'
         ,'{{# if(d.base && d.base.uploadImage){ }}'

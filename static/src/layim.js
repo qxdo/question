@@ -258,7 +258,7 @@ layui.define(['layer', 'laytpl', 'upload'], function(exports){
     ,'</div>'
     ,'<div class="layim-chat-footer">'
       ,'<div class="layui-unselect layim-chat-tool" data-json="{{encodeURIComponent(JSON.stringify(d.data))}}">'
-        ,'<span class="layui-icon layim-tool-face" title="选择表情" layim-event="face">&#xe60c;</span>'
+        //,'<span class="layui-icon layim-tool-face" title="选择表情" layim-event="face">&#xe60c;</span>'
         ,'{{# if(d.base && d.base.uploadImage){ }}'
         ,'<span class="layui-icon layim-tool-image" title="上传图片" layim-event="image">&#xe60d;<input type="file" name="file"></span>'
         ,'{{# }; }}'
@@ -282,10 +282,10 @@ layui.define(['layer', 'laytpl', 'upload'], function(exports){
       ,'<div class="layim-chat-bottom">'
         ,'<div class="layim-chat-send">'
           ,'{{# if(!d.base.brief){ }}'
-          ,'<span class="layim-send-close" layim-event="closeThisChat">关闭</span>'
+          //,'<span class="layim-send-close" layim-event="closeThisChat">关闭</span>'
           ,'{{# } }}'
           ,'<span class="layim-send-btn" layim-event="send">发送</span>'
-          ,'<span class="layim-send-set" layim-event="setSend" lay-type="show"><em class="layui-edge"></em></span>'
+          //,'<span class="layim-send-set" layim-event="setSend" lay-type="show"><em class="layui-edge"></em></span>'
           ,'<ul class="layui-anim layim-menu-box">'
             ,'<li {{d.local.sendHotKey !== "Ctrl+Enter" ? "class=layim-this" : ""}} layim-event="setSend" lay-type="Enter"><i class="layui-icon">&#xe605;</i>按Enter键发送消息</li>'
             ,'<li {{d.local.sendHotKey === "Ctrl+Enter" ? "class=layim-this" : ""}} layim-event="setSend"  lay-type="Ctrl+Enter"><i class="layui-icon">&#xe605;</i>按Ctrl+Enter键发送消息</li>'
@@ -640,11 +640,19 @@ layui.define(['layer', 'laytpl', 'upload'], function(exports){
       ,content: laytpl('<ul class="layui-unselect layim-chat-list">'+ elemChatList +'</ul><div class="layim-chat-box">' + elemChatTpl + '</div>').render(render)
       ,success: function(layero){
         layimChat = layero;
-        
         layero.css({
-          'min-width': '500px'
-          ,'min-height': '420px'
-        });
+           'min-width': '1920px'
+           ,'min-height': '1080px',
+          'top': '0px',
+          'left': '0px',
+          'height': '1080px',
+          'width': '1920px',
+         });
+
+        layero.attr('area', '1920,969,0,0')
+        layui.$('html').attr('overflow', 'hidden').attr('layer-full', '3')
+        layui.$('.layim-chat-main').css('height', '710px')
+
         
         syncGray(data);
         

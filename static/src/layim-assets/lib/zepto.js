@@ -615,6 +615,9 @@ layui.define(function(exports){
     hide: function(){
       return this.css("display", "none")
     },
+    maxBodySize: function(){
+      return this.css("clsss", "layer-max")
+    },
     toggle: function(setting){
       return this.each(function(){
         var el = $(this)
