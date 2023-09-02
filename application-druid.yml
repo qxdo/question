@@ -1,0 +1,120 @@
+# 数据源配置
+spring:
+    datasource:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driverClassName: com.mysql.cj.jdbc.Driver
+        druid:
+            # 主库数据源
+            master:
+#                url: jdbc:mysql://localhost:3306/tianyin-admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+#                url: jdbc:mysql://rm-8vboby70490yceb6wao.mysql.zhangbei.rds.aliyuncs.com:3306/tianyin-admin?useUnicode=true&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+                url: jdbc:mysql://rm-j6c69bi6r43u515ty6o.mysql.rds.aliyuncs.com:3306/tianyin-admin?useUnicode=true&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+                username: tianyin_admin
+#                password: 7EGRNKTFwECTyzCd
+#                url: jdbc:mysql://localhost:3306/tianyin-admin?useUnicode=true&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+#                username: tianyin-admin
+                # 秦皇岛-乐赞传媒
+#                password: b3dKhhHEm2tE67bx
+                # 吴鲁青-易聚传媒
+#                password: dAsK2sxpsmpxNSkF
+                # 二勋
+                password: ZYWiYZX4bds37EaE
+                # 南乐
+#                password: BiznPrctjCLAjw8Y
+                # 博士传媒
+#                password: J6Fzf4deW5zwrLcP
+                # langqi
+#                password: ZFysYbX8MisHkBGi
+                # 上禾传媒
+#                password: fDwXLLEBsBmS2by4
+                # 西安
+#                password: htxhRpMNmcn2GDSP
+                # 未来卓越传媒
+#                password: PGDWStPsnY6YBpYx
+                # 天音-贵州（乌蒙传媒）
+#                password: Txsk5WeCJ3MnXsMF
+                # 天音-泉州（天合传媒）
+#                password: tcP5TTw2kbEFLpCw
+                # 南平
+#                password: nd67TNBd6hJ4me75
+                #   洛阳-袁总
+#                password: 8FaEFXtxjApeKntr
+                #   洛阳-杨总
+#                password: YNyXh4WNar8YpJKj
+                #   雄县
+#                password: x4ZyYicJSmkGKrhz
+                #   濮阳摩派
+#                password: 37MrkMmybNNtLfc7
+                #   群芳-毕节
+#                password: pTkFZwbhbihADmDM
+                #   山西-运城
+#                password: hff2h5nz3DRhnTSM
+                #   范县-红人传媒
+#                password: SipfeKFfLBzK5ewf
+                #   王永分公司
+#                password: aTnWYf6APkSKjHh6
+                #   湖北分公司
+#                password: 6tCfYNBBLCZHWmPe
+                #   武汉分公司-胡总
+#                password: LN5pGLdd6MJTZJmb
+                #   开封分公司
+#                password: cfWwGXjshx63tMyp
+                #   徐州云信传媒
+#                password: aJscNYzkA3Ea5Kf5
+                #   郑州-元盟传媒
+#                password: DXB7ctnWwFacpKJe
+                #   茂名-信大传媒
+#                password: tKPGCGjBANfzeTWR
+                #   朱献峰--酷番文化
+#                password: NAZGaNKkR2GJeiJ6
+                #   陈建分公司-宏媒科技
+#                password: KzXBGhMShrD3r7HT
+                #   王腾飞-菏泽-飞讯传媒
+#                password: 2is4iaZzCedf5m4A
+
+            # 从库数据源
+            slave:
+                # 从数据源开关/默认关闭
+                enabled: false
+                url:
+                username:
+                password:
+            # 初始连接数
+            initialSize: 5
+            # 最小连接池数量
+            minIdle: 10
+            # 最大连接池数量
+            maxActive: 20
+            # 配置获取连接等待超时的时间
+            maxWait: 60000
+            # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+            timeBetweenEvictionRunsMillis: 60000
+            # 配置一个连接在池中最小生存的时间，单位是毫秒
+            minEvictableIdleTimeMillis: 300000
+            # 配置一个连接在池中最大生存的时间，单位是毫秒
+            maxEvictableIdleTimeMillis: 900000
+            # 配置检测连接是否有效
+            validationQuery: SELECT 1 FROM DUAL
+            testWhileIdle: true
+            testOnBorrow: false
+            testOnReturn: false
+            webStatFilter:
+                enabled: true
+            statViewServlet:
+                enabled: true
+                # 设置白名单，不填则允许所有访问
+                allow:
+                url-pattern: /druid/*
+                # 控制台管理用户名和密码
+                login-username: root11223gsdf
+                login-password: roasdfoasdf234gsdfg231423t
+            filter:
+                stat:
+                    enabled: true
+                    # 慢SQL记录
+                    log-slow-sql: true
+                    slow-sql-millis: 1000
+                    merge-sql: true
+                wall:
+                    config:
+                        multi-statement-allow: true

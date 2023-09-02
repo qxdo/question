@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="49.0.242.5" id="0a5f70f5-3b2d-4486-8ab6-2d08b876275e" port="22" nameFormat="DESCRIPTIVE" username="root" useOpenSSHConfig="true" />
+      <sshConfig authType="PASSWORD" host="119.12.175.93" id="8dfa0381-ea40-494e-9540-28560ccf79fe" port="22" nameFormat="DESCRIPTIVE" username="root" useOpenSSHConfig="true" />
+      <sshConfig authType="PASSWORD" host="159.138.141.112" id="66bd9956-87a7-4fcb-9ff7-a3cfa5ce879b" port="22" nameFormat="DESCRIPTIVE" username="root" useOpenSSHConfig="true" />
+      <sshConfig host="8.134.149.107" id="f16a37a9-e8f5-49bb-9b66-34c041473560" keyPath="$USER_HOME$/.ssh/id_ed25519" port="22" nameFormat="DESCRIPTIVE" username="ecs-user" useOpenSSHConfig="true" />
+      <sshConfig authType="PASSWORD" host="45.145.230.238" id="0a588737-0c46-458c-a379-ca33e05b1645" port="22" nameFormat="DESCRIPTIVE" username="root" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>

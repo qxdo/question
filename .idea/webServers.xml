@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="bc7c0983-92c6-4b61-b0d0-93aa94fce1c4" name="49.0.242.5@newone">
+        <fileTransfer accessType="SFTP" host="49.0.242.5" port="22" sshConfigId="0a5f70f5-3b2d-4486-8ab6-2d08b876275e" sshConfig="root@49.0.242.5:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="84e39cca-9e43-41ee-ab1f-c291bcd44077" name="yang@oldone">
+        <fileTransfer accessType="SFTP" host="119.12.175.93" port="22" sshConfigId="8dfa0381-ea40-494e-9540-28560ccf79fe" sshConfig="root@119.12.175.93:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="7a680564-f0db-4129-a780-7f89c8888e0d" name="1688@159.138.141.112">
+        <fileTransfer accessType="SFTP" host="159.138.141.112" port="22" sshConfigId="66bd9956-87a7-4fcb-9ff7-a3cfa5ce879b" sshConfig="root@159.138.141.112:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="4908213c-b223-4728-8d87-f8e23daed88b" name="8.134.149.107">
+        <fileTransfer accessType="SFTP" host="8.134.149.107" port="22" sshConfigId="f16a37a9-e8f5-49bb-9b66-34c041473560" sshConfig="ecs-user@8.134.149.107:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="79e80f4f-5d0c-47ee-9899-24612b860a73" name="45.145.230.238">
+        <fileTransfer accessType="SFTP" host="45.145.230.238" port="22" sshConfigId="0a588737-0c46-458c-a379-ca33e05b1645" sshConfig="root@45.145.230.238:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

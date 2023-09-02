@@ -1,0 +1,12 @@
+1.ssh上去服务器
+2.安装宝塔，宝塔的面板，install.sh
+3.安装 redis yum install redis -y
+systemctl start redis
+systemctl enable redis
+4.安装JDK，scp过来装 ， /usr/local/jdk/
+
+
+
+
+信息收集
+
